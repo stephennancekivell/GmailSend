@@ -1,6 +1,15 @@
+GmailSend
+========
 Send email messages from the command line using a gmail account. Intended for automated notification from scripts.
 
-# Usage
+Example
+--------
+
+
+	./GmailSend.py -u user@gmail.com -p password -t to@anywhere.com -s 'subject' -m 'message'
+
+Usage
+--------
 usage: GmailSend.py [-h] -u USER -p PASSWORD -t TO [-s SUBJECT] [-b BODY]
 
 To send emails from a gmail account.
@@ -13,5 +22,6 @@ optional arguments:
   -s SUBJECT, --subject SUBJECT
   -b BODY, --body BODY
 
-# Security note
+Security note
+--------
 Passwords in scripts are stored in plan text, dont use a email account that you dont want compromised.
