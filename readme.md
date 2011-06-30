@@ -8,6 +8,12 @@ Example
 
 	./GmailSend.py -u user@gmail.com -p password -t to@anywhere.com -s 'subject' -m 'message'
 
+or from another python script
+
+	#!/usr/bin/env python
+	import GmailSend
+	GmailSend.send(user,password,to,subject,body)
+
 Usage
 --------
 	usage: GmailSend.py [-h] -u USER -p PASSWORD -t TO [-s SUBJECT] [-b BODY]
