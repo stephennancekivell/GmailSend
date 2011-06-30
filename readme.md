@@ -10,17 +10,17 @@ Example
 
 Usage
 --------
-usage: GmailSend.py [-h] -u USER -p PASSWORD -t TO [-s SUBJECT] [-b BODY]
+	usage: GmailSend.py [-h] -u USER -p PASSWORD -t TO [-s SUBJECT] [-b BODY]
 
-To send emails from a gmail account.
+	To send emails from a gmail account.
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -u USER, --user USER  The gmail account to send from
-  -p PASSWORD, --password PASSWORD
-  -t TO, --to TO
-  -s SUBJECT, --subject SUBJECT
-  -b BODY, --body BODY
+	optional arguments:
+	  -h, --help            show this help message and exit
+	  -u USER, --user USER  The gmail account to send from
+	  -p PASSWORD, --password PASSWORD
+	  -t TO, --to TO
+	  -s SUBJECT, --subject SUBJECT
+	  -b BODY, --body BODY
 
 Security note
 --------
