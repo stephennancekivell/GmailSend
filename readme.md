@@ -5,7 +5,6 @@ Send email messages from the command line using a gmail account. Intended for au
 Example
 --------
 
-
 	./GmailSend.py -u user@gmail.com -p password -t to@anywhere.com -s 'subject' -m 'message'
 
 or from another python script
@@ -27,7 +26,8 @@ Usage
 	  -t TO, --to TO
 	  -s SUBJECT, --subject SUBJECT
 	  -b BODY, --body BODY
-
-Security note
---------
-Passwords in scripts are stored in plan text, dont use a email account that you dont want compromised.
+	
+	Security Note:
+	  Passwords in scripts are stored in plan text.
+	  Passwords entered in the command line usually go into a bash_history file in plan text.
+	  Dont use a email account that you dont want compromised.

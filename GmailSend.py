@@ -11,13 +11,10 @@ from email import Encoders
 
 def send(user, pwd, to, subject, text):
     msg = MIMEMultipart()
-    
     msg['From'] = user
     msg['To'] = to
     msg['Subject'] = subject
-    
     msg.attach(MIMEText(text))
-    
     mailServer = smtplib.SMTP("smtp.gmail.com", 587)
     mailServer.ehlo()
     mailServer.starttls()
@@ -29,7 +26,15 @@ def send(user, pwd, to, subject, text):
 
 def main():
     desc = "To send emails from a gmail account."
-    parser = argparse.ArgumentParser(description = desc)
+
+    epil = "Security Note:\n"
+    epil += "  Passwords in scripts are stored in plan text.\n"
+    epil += "  Passwords entered in the command line usually go into a bash_history file in plan text.\n"
+    epil += "  Dont use a email account that you dont want compromised."
+
+    parser = argparse.ArgumentParser(description=desc,
+        epilog=epil,
+        formatter_class=argparse.RawDescriptionHelpFormatter)
     
     parser.add_argument("-u", "--user", dest='user', required=True, help="The gmail account to send from")
     parser.add_argument("-p", "--password", dest='password', required=True)
