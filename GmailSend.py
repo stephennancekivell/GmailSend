@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import smtplib
-import sys
 import argparse
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEBase import MIMEBase
