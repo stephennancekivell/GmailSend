@@ -24,13 +24,22 @@ def send(user, pwd, to, subject, text):
     mailServer.close()
 
 
-def main():
-    desc = "To send emails from a gmail account."
+if __name__ == "__main__":
+    desc = "To send emails from a gmail account.\n"
+    desc += "\n"
+    desc += "Example:\n"
+    desc += "  ./GmailSend.py -u user@gmail.com -p password -t to@anywhere.com -s 'subject' -m 'message'\n"
+    desc += "\n"
+    desc += "or from another python script\n"
+    desc += "  #!/usr/bin/env python\n"
+    desc += "  import GmailSend\n"
+    desc += "  GmailSend.send(user,password,to,subject,body)\n"
 
     epil = "Security Note:\n"
     epil += "  Passwords in scripts are stored in plan text.\n"
     epil += "  Passwords entered in the command line usually go into a bash_history file in plan text.\n"
-    epil += "  Dont use a email account that you dont want compromised."
+    epil += "  Dont use a email account that you dont want compromised.\n"
+    epil += "\n"
 
     parser = argparse.ArgumentParser(description=desc,
         epilog=epil,
@@ -44,7 +53,3 @@ def main():
     
     a = parser.parse_args()
     send(a.user, a.password, a.to, a.subject, a.body)
-
-
-if __name__ == "__main__":
-    main()
