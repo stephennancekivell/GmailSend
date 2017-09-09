@@ -27,4 +27,4 @@ Usage
 	Security Note:
 	  Passwords in scripts are stored in plan text.
 	  Passwords entered in the command line usually go into a bash_history file in plan text.
-	  Dont use a email account that you dont want compromised.
+	  Don't use a email account that you don't want compromised.
