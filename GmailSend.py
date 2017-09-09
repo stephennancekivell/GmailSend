@@ -37,7 +37,7 @@ if __name__ == "__main__":
     epil = "Security Note:\n"
     epil += "  Passwords in scripts are stored in plan text.\n"
     epil += "  Passwords entered in the command line usually go into a bash_history file in plan text.\n"
-    epil += "  Dont use a email account that you dont want compromised.\n"
+    epil += "  Don't use a email account that you don't want compromised.\n"
     epil += "\n"
 
     parser = argparse.ArgumentParser(description=desc,
